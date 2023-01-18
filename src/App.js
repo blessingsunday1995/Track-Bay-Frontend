@@ -1,9 +1,14 @@
 import './App.css';
+import CrmDivComponent from './component/CrmDivComponent'
+import CrmSection from './component/CrmSection';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello! Welcome to CX- 365</h1>
+      <CrmDivComponent />
+      <div className="content">
+        <CrmSection />
+      </div>
     </div>
   );
 }
