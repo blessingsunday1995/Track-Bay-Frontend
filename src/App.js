@@ -3,6 +3,11 @@ import CrmDivComponent from './component/CrmDivComponent'
 import CrmSection from './component/CrmSection';
 import OurProduct from './component/OurProduct';
 import ContactUs from './component/ContactUs';
+import FooterComponent from './component/FooterComponent';
+import SVCComponent from './component/SVCComponent';
+import SocialsComponent from './component/SocialsComponent';
+
+
 
 function App() {
   return (
@@ -13,6 +18,9 @@ function App() {
         <div className="">
           <OurProduct />
           <ContactUs />
+          <SVCComponent />
+          <FooterComponent />
+          <SocialsComponent />
         </div>
       </div>
     </div>

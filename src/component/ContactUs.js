@@ -5,6 +5,13 @@ import styled from 'styled-components';
 const FormStyling = styled.div`
 #fcf-form {
     display:block;
+    background-color: #316DDD;
+    width:60%;
+    margin:auto;
+    padding: 10px 2px;
+    margin-top:20px;
+    border-radius:10px;
+    margin-bottom:-5rem;
 }
 
 .fcf-body {
@@ -34,7 +41,7 @@ const FormStyling = styled.div`
     flex-wrap: wrap;
     -ms-flex-align: stretch;
     align-items: stretch;
-    width: 50%;
+    width: 80%;
     margin:auto;
 }
 .fcf-form-control {
@@ -42,9 +49,9 @@ const FormStyling = styled.div`
     width: 100%;
     height: calc(1.5em + 0.75rem + 2px);
     padding: 0.375rem 0.75rem;
-    font-size: 1rem;
+    font-size: 0.7rem;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.0;
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
@@ -88,7 +95,7 @@ label.fcf-label {
 }
 .fcf-btn {
     display: inline-block;
-    font-weight: 400;
+    font-weight: 200;
     color: #212529;
     text-align: center;
     vertical-align: middle;
@@ -122,9 +129,9 @@ label.fcf-label {
 }
 
 .fcf-btn-primary {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    color: black;
+    background-color: #F1AE2B;
+    border-color: #ff0000;
 }
 .fcf-btn-primary:hover {
     color: #fff;
@@ -158,6 +165,9 @@ label.fcf-label {
 input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
     width: 50%;
 }
+h3{
+    color:white;
+}
 `
 
 export const ContactUs = () =>
@@ -170,28 +180,28 @@ export const ContactUs = () =>
                 <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
 
                     <div class="fcf-form-group">
-                        <label for="Name" class="fcf-label">Your name</label>
+                        <label for="Name" class="fcf-label"></label>
                         <div class="fcf-input-group">
-                            <input type="text" id="Name" name="Name" class="fcf-form-control" required />
+                            <input type="text" id="Name" name="Name" class="fcf-form-control" placeholder='Full Name' required />
                         </div>
                     </div>
 
                     <div class="fcf-form-group">
-                        <label for="Email" class="fcf-label">Your email address</label>
+                        <label for="Email" class="fcf-label"></label>
                         <div class="fcf-input-group">
-                            <input type="email" id="Email" name="Email" class="fcf-form-control" required />
+                            <input type="email" id="Email" name="Email" class="fcf-form-control" placeholder= "Email" required />
                         </div>
                     </div>
 
                     <div class="fcf-form-group">
-                        <label for="Message" class="fcf-label">Your message</label>
+                        <label for="Message" class="fcf-label"></label>
                         <div class="fcf-input-group">
-                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                            <textarea id="Message" name="Message" class="fcf-form-control" rows="8" maxlength="3000" placeholder='Description' required></textarea>
                         </div>
                     </div>
 
                     <div class="fcf-form-group">
-                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Submit</button>
                     </div>
 
                  
