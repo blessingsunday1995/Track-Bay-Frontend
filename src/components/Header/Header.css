@@ -1,0 +1,45 @@
+.cont{
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  left: 58px;
+  margin-top: 150px;
+}
+
+h1{
+  display: flex;
+  font-weight: 700;
+  color: #2E2D2C;
+  font-family: 'Lexend'; 
+}
+
+p{
+  left:58px; 
+  margin-top: 20px; 
+  font-size: 14px;
+  color: #354763;
+}
+
+.cont button{
+  margin-top: 40px; 
+  width: 100px;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: #F1AE2B;
+  border-radius: 8px;
+  line-height: 20px;
+  color: #E5F7E0;
+  font-family: 'Lexend';
+}
+
+img{
+  position: absolute;
+  display: flex;
+  margin-left: 250px;
+  width: 500px;
+  height: 300px;
+}
+
+
+  
+   
