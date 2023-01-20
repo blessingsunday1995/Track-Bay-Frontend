@@ -1,3 +1,11 @@
+import './App.css';
+import CrmDivComponent from './component/CrmDivComponent'
+import CrmSection from './component/CrmSection';
+import OurProduct from './component/OurProduct';
+import ContactUs from './component/ContactUs';
+import FooterComponent from './component/FooterComponent';
+import SVCComponent from './component/SVCComponent';
+import SocialsComponent from './component/SocialsComponent';
 import './components/Home';
 import './components/Header/Home';
 import Navbar from "./components/Nav/Nav";
@@ -14,8 +22,10 @@ import Header from './components/Header/Home';
 
 function App() {
   return (
-    <Router>
+<Router>
       <div className='App'>
+      
+ 
         <ul>
           <li><Link to="/features" Features></Link></li>
           <li><Link to="/pricing" Pricing></Link></li>
@@ -35,9 +45,20 @@ function App() {
         <Route exact path='/blog' element={<Blog />}></Route>
         <Route exact path='/pages' element={<Pages />}></Route>
         <Route exact path='/newsletter' element={<Newsletter />}></Route>
+           </div>
+      </div>
+    </div>
       </Routes>
+      <CrmDivComponent />
+      <div className="content">
+        <CrmSection />
+        <div className="">
+          <OurProduct />
+          <ContactUs />
+          <SVCComponent />
+          <FooterComponent />
+          <SocialsComponent />
     </Router>
-
   );
 }
 

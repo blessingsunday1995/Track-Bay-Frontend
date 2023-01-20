@@ -1,6 +1,14 @@
+
 .App {
-  text-align:center;
+  text-align: center;
+  padding: 2em;
 }
 
-
-
+.App-link {
+  color: #61dafb;
+}
+.product{
+  margin-left: 40px;
+  margin-top: -70px;
+  margin-bottom: 50px;
+}
