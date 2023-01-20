@@ -20,12 +20,11 @@ import Header from './components/Header/Home';
 
 
 
-function App() {
+function App()
+{
   return (
-<Router>
+    <Router>
       <div className='App'>
-      
- 
         <ul>
           <li><Link to="/features" Features></Link></li>
           <li><Link to="/pricing" Pricing></Link></li>
@@ -34,30 +33,29 @@ function App() {
           <li><Link to="/pages" Pages></Link></li>
           <li><Link to="/newsletter" Newsletter></Link></li>
         </ul>
-      </div>
-      <Header />
-      <Navbar />
-      <Routes>
+        <Header />
+        <Navbar />
+        <Routes>
 
-        <Route exact path='/features' element={<Features />}></Route>
-        <Route exact path='/pricing' element={<Pricing />}></Route>
-        <Route exact path='/webinars' element={<Webinars />}></Route>
-        <Route exact path='/blog' element={<Blog />}></Route>
-        <Route exact path='/pages' element={<Pages />}></Route>
-        <Route exact path='/newsletter' element={<Newsletter />}></Route>
-           </div>
+          <Route exact path='/features' element={<Features />}></Route>
+          <Route exact path='/pricing' element={<Pricing />}></Route>
+          <Route exact path='/webinars' element={<Webinars />}></Route>
+          <Route exact path='/blog' element={<Blog />}></Route>
+          <Route exact path='/pages' element={<Pages />}></Route>
+          <Route exact path='/newsletter' element={<Newsletter />}></Route>
+        </Routes>
+        <CrmDivComponent />
+        <div className="content">
+          <CrmSection />
+          <div className="">
+            <OurProduct />
+            <ContactUs />
+            <SVCComponent />
+            <FooterComponent />
+            <SocialsComponent />
+          </div>
+        </div>
       </div>
-    </div>
-      </Routes>
-      <CrmDivComponent />
-      <div className="content">
-        <CrmSection />
-        <div className="">
-          <OurProduct />
-          <ContactUs />
-          <SVCComponent />
-          <FooterComponent />
-          <SocialsComponent />
     </Router>
   );
 }
